@@ -12,8 +12,8 @@ export default function() {
   const lastName = useNamesSelector(s => s.lastName);
 
   function swap() {
-    dispatch(set({key: 'firstName', value: lastName}))
-    dispatch(set({key: 'lastName', value: firstName}))
+    dispatch(set('firstName', lastName))
+    dispatch(set('lastName', firstName))
   }
 
   return (

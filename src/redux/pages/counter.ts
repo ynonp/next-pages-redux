@@ -1,6 +1,4 @@
 import {useSelector, TypedUseSelectorHook} from 'react-redux';
-import { createAction } from '@reduxjs/toolkit';
-import type {SetFieldPayload} from './types';
 
 export type Counter = {
   count: number;

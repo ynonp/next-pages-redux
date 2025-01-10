@@ -7,9 +7,7 @@ export const getServerSideProps = (async () => {
 
 export default function Home() {
   return (
-    <main
-      
-    >
+    <main>
       <Counter />
     </main>
   )

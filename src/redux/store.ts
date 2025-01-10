@@ -1,11 +1,12 @@
 import { configureStore, createReducer } from '@reduxjs/toolkit'
 import { set } from './actions';
+import _ from 'lodash';
 
 export function makeStore(initialState: any) {
   return configureStore({
     reducer: createReducer(initialState, builder => {
       builder.addCase(set, (state, action) => {
-        // @ts-ignore
+        // @ts-ignore        
         state[action.payload.key] = action.payload.value;
       })
     })
